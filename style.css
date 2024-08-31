@@ -379,3 +379,88 @@ span {
     font-size: 2.4rem;
     /* color: var(--second-bg-color); */
 }
+
+
+.splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.splash-screen h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.splash-screen p {
+    font-size: 1.6rem;
+}
+
+
+
+/* Splash Screen */
+.splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.splash-screen.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.splash-content {
+    text-align: center;
+    color: var(--text-color);
+    font-size: medium;
+}
+
+.splash-content h1 {
+    font-size: 3.6rem;
+    margin-bottom: 1rem;
+}
+
+.splash-content p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+/* Loading Animation */
+.loading-animation {
+    width: 50px;
+    height: 50px;
+    border: 6px solid var(--second-bg-color);
+    border-top-color: var(--main-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto; /* Center the animation horizontally */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

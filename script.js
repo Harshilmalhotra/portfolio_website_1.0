@@ -3,5 +3,5 @@ window.addEventListener('load', () => {
     
     setTimeout(() => {
         splashScreen.classList.add('hidden');
-    }, 5000); // Show splash screen for 3 seconds
+    }, 3000); // Show splash screen for 3 seconds
 });
